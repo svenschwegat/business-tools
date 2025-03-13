@@ -13,7 +13,7 @@ Sub SaveCurrentSlideAsPNG()
     fileName = ActivePresentation.Name
     extensionPosition = InStrRev(fileName, ".")
     If extensionPosition > 0 Then
-        fileName = Left(presentationName, extensionPosition - 1)
+        fileName = Left(fileName, extensionPosition - 1)
     End If
     
     formattedDate = Format(Date, "yyyy-mm-dd")
