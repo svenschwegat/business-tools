@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/tile-formatting.schema.json",
-  "height": 210,
+  "height": 300,
   "width": 254,
   "hideSelection": false,
   "fillHorizontally": true,
@@ -145,25 +145,12 @@
                 "children": [
                   {
                     "columnFormatterReference": "[$Grade]"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "elmType": "div",
-            "attributes": {
-              "class": "sp-card-displayColumnContainer"
-            },
-            "children": [
-              {
-                "elmType": "div",
-                "attributes": {
-                  "class": "sp-card-content sp-card-formatterRef"
-                },
-                "children": [
+                  },
                   {
                     "columnFormatterReference": "[$Standort]"
+                  },
+                  {
+                    "columnFormatterReference": "[$PracticeTeam]"
                   }
                 ]
               }
@@ -183,8 +170,8 @@
                 },
                 "txtContent": "=if ([$Beschreibung] == '', '–', [$Beschreibung])",
                 "style": {
-                  "-webkit-line-clamp": "2",
-                  "height": "40px"
+                  "-webkit-line-clamp": "5",
+                  "height": "100px"
                 }
               }
             ]
